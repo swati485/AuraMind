@@ -1,0 +1,176 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@600;700&display=swap');
+
+/* --- Global Font Rendering Tweaks --- */
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* --- General & Layout (Dark Theme) --- */
+.stApp {
+    background-color: #07090b;
+    color: #e5e7eb;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Ensure light text globally */
+body, [data-testid="stAppViewContainer"], .stMarkdown, .stText, label {
+    color: #e5e7eb !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* --- Custom Header --- */
+.header {
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #6D28D9, #A333C4, #EC4899);
+    color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.header h1 {
+    font-size: 2.2rem;
+}
+.header .subheader {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+.header .disclaimer {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* --- Custom Cards --- */
+.card {
+    background-color: #161a22;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+    margin-bottom: 1rem;
+    border: 1px solid #2a2f3a;
+}
+.card h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e5e7eb;
+    border-bottom: 1px solid #2a2f3a;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* --- Chat Messages WhatsApp Style --- */
+.stChatMessage {
+    max-width: 75%;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    letter-spacing: 0.15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* User messages aligned right */
+[data-testid="stChatMessage"].stChatMessage-user {
+    margin-left: auto;
+    background: #1f2937;
+    border: 1px solid rgba(99,102,241,0.25);
+    color: #e5e7eb;
+    font-weight: 500;
+}
+
+/* Bot messages aligned left */
+[data-testid="stChatMessage"]:not(.stChatMessage-user) {
+    margin-right: auto;
+    background: #11213d;
+    border: 1px solid rgba(34, 116, 197, 0.25);
+    color: #e5e7eb;
+}
+
+/* --- Scrollable chat container --- */
+.chat-scroll {
+    max-height: 420px;
+    overflow-y: auto;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+}
+
+/* Inputs and textareas dark theme */
+input[type="text"], textarea, .stTextInput input, [data-baseweb="textarea"] textarea::placeholder {
+    color: #9ca3af !important;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.15px;
+}
+
+/* Links in dark */
+a, .stMarkdown a { color: #93c5fd !important; }
+a:hover, .stMarkdown a:hover { color: #bfdbfe !important; }
+
+/* Link button styling for sidebar anchors */
+.link-btn {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #2a2f3a;
+    border-radius: 999px;
+    color: #e5e7eb !important;
+    text-decoration: none !important;
+    background: linear-gradient(180deg, #1b1f2a, #151922);
+    font-family: 'Inter', sans-serif;
+}
+.link-btn:hover {
+    border-color: #374151;
+    background: linear-gradient(180deg, #232839, #1b1f2a);
+}
+
+/* --- Prompt Buttons --- */
+.stButton>button {
+    border-radius: 1.5rem;
+    background: linear-gradient(180deg, #1b1f2a, #151922);
+    color: #e5e7eb;
+    border: 1px solid #2a2f3a;
+    transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.2px;
+}
+.stButton>button:hover {
+    background: linear-gradient(180deg, #232839, #1b1f2a);
+    color: #ffffff;
+    border-color: #374151;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+}
+
+/* --- Sidebar --- */
+.stSidebar {
+    font-family: 'Inter', sans-serif;
+}
+.stSidebar h2 {
+    font-weight: 600;
+}
+.stSidebar .sidebar-footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    border-top: 1px solid #2a2f3a;
+    padding-top: 1rem;
+}
+
+
+
