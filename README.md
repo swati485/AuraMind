@@ -144,12 +144,4 @@ Open the app at:
 ✔ Multilingual support (Hindi, Bengali, Marathi…)
 ✔ Advanced crisis-detection algorithm
 
-👩‍💻 Author
 
-Swati Sharma
-MCA – Graphic Era Hill University
-GitHub: github.com/swati485
-
-📄 License
-
-This project is licensed under the MIT License.
